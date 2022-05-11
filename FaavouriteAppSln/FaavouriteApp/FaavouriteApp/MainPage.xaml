@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FaavouriteApp.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Frame BackgroundColor="Beige" Padding="24" CornerRadius="40">
+            <Label Text="Welcome to Android!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text ="Hello Motor" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+        <Button Text="Contacts " Clicked="Contacts_Clicked"/>
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
