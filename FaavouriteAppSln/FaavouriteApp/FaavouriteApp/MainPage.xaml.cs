@@ -14,9 +14,9 @@ namespace FaavouriteApp
         {
             InitializeComponent();
         }
-        private void Contacts_Clicked(object sender, EventArgs e)
+        private async  void Contacts_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Contacts());
+             await Navigation.PushAsync(new Contacts());
         }
     }
 }

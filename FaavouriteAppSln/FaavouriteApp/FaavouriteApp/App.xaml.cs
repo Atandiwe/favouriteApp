@@ -10,7 +10,10 @@ namespace FaavouriteApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+
+            NavigationPage navePage= new NavigationPage (new  FavouritesTabbedPage());
+            navePage.BackgroundColor= Color.LightGreen;
+            MainPage = navePage;
         }
 
         /*protected override void OnStart()
