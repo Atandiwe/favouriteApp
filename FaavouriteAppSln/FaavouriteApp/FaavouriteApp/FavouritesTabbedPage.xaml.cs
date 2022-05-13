@@ -17,7 +17,7 @@ namespace FaavouriteApp
             InitializeComponent();
 
             Children.Add(new Contacts());
-            Children.Add(new KeyboardPage());
+        
             Children.Add(new Favourites());
 
 

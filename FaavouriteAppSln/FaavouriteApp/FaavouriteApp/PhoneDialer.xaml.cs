@@ -39,7 +39,10 @@ namespace FaavouriteApp
                 }
             }
         }
-        //private void Button_Clicked(object, EventArgs e)
+        private  void Button_Clicked(object send, EventArgs e)
+        {
+            Navigation.PushAsync(new PhoneDialer());
+        }
 
         private static void Open(string number)
         {

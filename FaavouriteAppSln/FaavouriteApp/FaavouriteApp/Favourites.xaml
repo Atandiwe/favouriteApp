@@ -4,9 +4,10 @@
              x:Class="FaavouriteApp.Favourites" Title="Favourites" IconImageSource="star.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="No Favourites!"
+            <Label Text="Add Favourites!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <ImageButton Source="add.png" Clicked="Button_Clicked" BorderColor="Green" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

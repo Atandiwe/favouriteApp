@@ -12,7 +12,7 @@ namespace FaavouriteApp
 
 
             NavigationPage navePage= new NavigationPage (new  FavouritesTabbedPage());
-            navePage.BackgroundColor= Color.LightGreen;
+            navePage.BackgroundColor= Color.White;
             MainPage = navePage;
         }
 

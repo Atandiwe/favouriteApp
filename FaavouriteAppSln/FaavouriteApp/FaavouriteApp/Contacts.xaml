@@ -8,36 +8,36 @@
             <StackLayout>
                 <ListView ItemsSource="{Binding Contactslist}" HasUnevenRows="True" SelectionMode="None">
 
-                <ListView.ItemTemplate>
+                    <ListView.ItemTemplate>
 
-                    <DataTemplate x:DataType="faavouriteapp:ContactList">
+                        <DataTemplate x:DataType="faavouriteapp:ContactList">
 
-                        <ViewCell>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
 
-                                <Grid.ColumnDefinitions>
-                                
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding ContactImageName}"  Grid.Column="0" Grid.RowSpan="2" />
+                                    
+                                    <Label Padding="0,5,10,5" Text="{Binding ContactTitle}" TextColor="Blue" FontSize="16" FontAttributes="Bold"  Grid.Row ="0" Grid.Column="1"/>
+                                    <Label Padding="0,5,10,5" Text="{Binding ContactNumber}"  TextColor="Black" FontAttributes="Bold" FontSize="12" Grid.Row="1" Grid.Column="1"/>
+                                </Grid>
+
+                            </ViewCell>
+
+                        </DataTemplate>
 
 
-                                <Label Padding="10,5,10,5" Text="{Binding ContactTitle}" FontSize="16" FontAttributes="Bold"  Grid.Row ="0" Grid.Column="0"/>
-
-                                <Label Padding="10,5,10,5" Text="{Binding ContactNumber}" FontSize="10" Grid.Row="1" Grid.Column="0"/>
-                            </Grid>
-
-                        </ViewCell>
-
-                    </DataTemplate>
-
-
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
 
 
 
@@ -48,6 +48,7 @@
              HorizontalTextAlignment="Start"
              FontSize="Medium"
              FontAttributes="Bold"/>
+
 
         </StackLayout>
     </ContentPage.Content>
